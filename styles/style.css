@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: url(../images/tbzuni.jpg);
+  background-size: 100%;
+  display: grid;
+  place-items: center;
+  font-family: lato;
+}
+
+.container {
+  width: 440px;
+  height: max-content;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  padding-top: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 40px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+.search_section {
+  display: flex;
+  margin-top: 16px;
+  margin-left: 11px;
+  gap: 8px;
+}
+
+#search_bar {
+  width: 370px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  padding-left: 10px;
+  color: #fff;
+  background-color: rgb(98 97 97 / 80%);
+}
+
+#search_bar:focus {
+  outline: none;
+}
+
+#search_bar:hover {
+  background-color: rgba(117, 110, 110, 0.8);
+}
+
+#search_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  background-color: rgb(98 97 97 / 80%);
+  transition: all 0.5s ease-out;
+  display: grid;
+  place-items: center;
+}
+#search_button:hover {
+  background-color: #c9b9b9;
+}
+
+.search_button_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.weather_information {
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
